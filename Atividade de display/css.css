@@ -1,0 +1,44 @@
+:root {
+    --bg: #f0f0f0;
+}
+
+.card {
+    width: 300px;
+    background-color: rgb(59, 255, 82);
+    padding: 90px;
+    margin: 50px;;
+
+    border-radius: 12px;
+    border: 1px solid #dddddd57;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+}
+
+.card h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
