@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #d5e8f0, #2E75B6);
+  color: #0a2a40;
+}
+
+.conteudo {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#temperatura {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+#mensagem {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
