@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jonathan Calebe | Desenvolvedor Front-end</title>
+
+  <meta name="description" content="Portfólio de Jonathan Calebe, desenvolvedor Front-end em formação, com projetos em HTML, CSS e JavaScript.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#inicio" class="logo">Jonathan Calebe</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">Sobre mim</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Alternar tema"
+        >
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===== INÍCIO ===== -->
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+
+          <p class="hero-greeting" id="saudacao">Olá!</p>
+
+          <h1 class="hero-title">
+            Eu sou <span>Jonathan Calebe</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Desenvolvedor em formação
+          </p>
+
+          <p class="hero-desc">
+            Criando e transformando ideias na prática,
+            desenvolvendo minhas habilidades e aprendendo
+            novas tecnologias.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#projetos" class="btn btn-primary">
+              Ver projetos
+            </a>
+
+            <a href="#contato" class="btn btn-outline">
+              Fale comigo
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ===== SUA FOTO ===== -->
+        <div class="hero-visual">
+
+          <div class="avatar-wrapper">
+
+            <img
+              src="WhatsApp Image 2026-10-23 at 17.45.12 (2).jpeg"
+              alt="Foto de Jonathan Calebe"
+              class="avatar"
+              width="320"
+              height="320"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section id="sobre" class="section">
+      <div class="container">
+
+        <h2 class="section-title">
+          Sobre mim
+        </h2>
+
+        <div class="about-content">
+
+          <p>
+            Sou uma pessoa que gosta muito de esportes,
+            animes e de aprender coisas novas. Meus animes
+            favoritos são Re:Zero e Blue Lock, que gosto
+            muito pela história e pelos personagens.
+
+            Também gosto de trabalhar em equipe, colaborar
+            com outras pessoas e compartilhar ideias. Sou
+            dedicado, esforçado e estou sempre disposto
+            a enfrentar novos desafios.
+
+            Meu objetivo é continuar aprendendo,
+            desenvolver minhas habilidades e dar
+            o meu melhor em tudo que faço.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+
+        <h2 class="section-title">
+          Meus projetos
+        </h2>
+
+        <p class="section-subtitle">
+          Alguns trabalhos que desenvolvi recentemente
+        </p>
+
+        <!-- Filtros -->
+        <div class="filter-buttons">
+
+          <button
+            class="btn btn-filter active"
+            data-filter="all"
+            type="button"
+          >
+            Todos
+          </button>
+
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- ===== ATIVIDADE 1 ===== -->
+          <article class="card" data-category="web">
+
+            <div class="card-image">
+
+              <img
+                src="Logo VS Code com Texto DISPLAY.png"
+                alt="Imagem da Atividade 1"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="card-body">
+
+              <h3 class="card-title">
+                Atividade 1
+              </h3>
+
+              <p class="card-desc">
+                Display
+              </p>
+
+              <div class="card-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <a href="#" class="btn btn-small">
+                Ver projeto
+              </a>
+
+            </div>
+
+          </article>
+
+          <!-- ===== ATIVIDADE 2 ===== -->
+          <article class="card" data-category="web">
+
+            <div class="card-image">
+
+              <img
+                src="Logo do VS Code com UC15.png"
+                alt="Imagem da Atividade 2"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="card-body">
+
+              <h3 class="card-title">
+                Atividade 2
+              </h3>
+
+              <p class="card-desc">
+                UC15
+              </p>
+
+              <div class="card-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <a href="#" class="btn btn-small">
+                Ver projeto
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section">
+      <div class="container">
+
+        <h2 class="section-title">
+          Contato
+        </h2>
+
+        <p class="section-subtitle">
+          Vamos conversar? Envie uma mensagem!
+        </p>
+
+        <form class="contact-form" id="contactForm">
+
+          <div class="form-group">
+
+            <label for="nome">
+              Nome
+            </label>
+
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="email">
+              E-mail
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="mensagem">
+              Mensagem
+            </label>
+
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Digite sua mensagem..."
+              required
+            ></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Enviar mensagem
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © 2026 Jonathan Calebe. Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
