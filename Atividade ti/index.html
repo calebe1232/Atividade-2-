@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consulta de Notas</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <div class="icone"></div>
+            <h1>Notas do aluno</h1>
+            <p>Consulte a média do estudante </p>
+        </header>
+
+        <form id="formNotas">
+            <div class="campo">
+                <label for="nome">Nome do estudante</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome completo"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+            <div class="notas">
+                <div class="campo">
+                    <label for="nota1">Nota 1</label>
+                    <input
+                        type="text"
+                        inputmode="decimal"
+                        id="nota1"
+                        placeholder="0 a 10"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="nota2">Nota 2</label>
+                    <input
+                        type="text"
+                        inputmode="decimal"
+                        id="nota2"
+                        placeholder="0 a 10"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="nota3">Nota 3</label>
+                    <input
+                        type="text"
+                        inputmode="decimal"
+                        id="nota3"
+                        placeholder="0 a 10"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button type="submit" class="btn-calcular">
+                    Calcular média
+                </button>
+
+                <button type="reset" class="btn-limpar">
+                    Reiniciar consulta
+                </button>
+            </div>
+        </form>
+
+        <section
+            id="resultado"
+            class="resultado"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+        >
+            <h2>Resultado da consulta</h2>
+            <p id="mensagem"></p>
+            <div class="media-box">
+                <span>Média final</span>
+                <strong id="media">0,00</strong>
+            </div>
+            <p id="situacao" class="situacao"></p>
+        </section>
+
+        <footer>
+            <p>Sistema acadêmico de consulta de notas</p>
+        </footer>
+    </main>
+</body>
+</html>
